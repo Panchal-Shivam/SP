@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="category.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Navbar -->
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <img src="img/sp_logo.png" alt="SP Enterprise">
+    </div>
+
+    <nav class="nav" id="navMenu">
+  <ul class="nav-links">
+    <li><a href="index.html#home">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#products">Products</a></li>
+    <li><a href="index.html#clients">Clients</a></li>
+    <li><a href="index.html#gallery">Gallery</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+<section class="category-header" id="categoryHeader">
+
+  <h1 class="category-title">Pressure And Sterilization Equipment</h1>
+  <p class="category-description">
+We manufacture pressure and sterilization equipment engineered for controlled temperature and pressure conditions. Built using high-grade stainless steel, these systems ensure reliable performance while maintaining cleanliness and material integrity. Designed for processes that require precise sterilization and safe handling of critical materials.
+
+  </p>
+
+</section>
+
+<section class="category-gallery">
+
+<div class="image-popup" id="imagePopup">
+  <span class="close-btn" id="closePopup">&times;</span>
+  <img id="popupImg" src="" draggable="false">
+</div>
+
+<!---------------------------Image Cards---------------------------------------->
+  <div class="gallery-card">
+  <img src="img/gallery5.jpg" alt="SS Hopper">
+  <div class="gallery-info">
+    <span>SS Hopper</span>
+    <i class="fa-regular fa-paper-plane enquiry-btn" data-item="SS Hopper"></i>
+  </div>
+</div>
+    
+
+
+
+</section>
+
+
+<!-- Enquiry Pop Up Form -->
+<div class="enquiry-popup" id="enquiryPopup">
+
+  <div class="enquiry-box">
+    <span class="close-enquiry" id="closeEnquiry">&times;</span>
+
+    <h3>Product Enquiry</h3>
+
+  <form id="enquiryForm">
+    
+      <!-- Web3Forms Access Key -->
+      <input type="hidden" name="access_key" value="5572e807-2c9d-41bb-9c9d-8057d4338eb6">
+
+      <!-- Email Subject -->
+
+      <input type="hidden" name="subject" id="emailSubject">
+
+      <!-- Optional Sender Name -->
+      <input type="hidden" name="from_name" value="Product Enquiry on Website - SP Enterprise">
+
+      <!-- Spam Protection -->
+      <input type="checkbox" name="botcheck" style="display:none;">
+
+      <div class="enquiry-product-preview">
+        <img id="enquiryProductImg" src="">
+      </div>
+
+      <input type="text" id="productName" name="Product" readonly>
+
+      <input type="hidden" id="productImage" name="Product Image Link">
+
+      <input type="text" name="Name" placeholder="Your Name*" required>
+
+      <input type="email" name="Email" placeholder="Your Email*" required>
+
+      <input type="tel" name="Phone" placeholder="Phone">
+
+      <textarea name="Message" placeholder="Describe your requirement*" required></textarea>
+
+      <button type="submit">Send Enquiry</button>
+
+      <p id="formStatus" style="display:none; color:green; margin-top:10px;">
+Enquiry sent successfully.
+</p>
+
+    </form>
+
+  </div>
+
+</div>
+
+<!-------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------->
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Company Info -->
+    <div class="footer-box">
+      <h3>SP Enterprise</h3>
+      <p>
+        Ahmedabad, Gujarat, India<br>
+        Manufacturer & Fabricator of Industrial Equipment
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <!-- <div class="footer-box">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#clients">Clients</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div> -->
+
+    <!-- Contact Info -->
+    <div class="footer-box">
+      <h4>Contact</h4>
+
+      <p>
+        <i class="fas fa-phone"></i>
+        <a href="tel:7285851432">7285851432</a>
+      </p>
+
+      <p>
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:connect@spen.co.in">
+          connect@spen.co.in
+        </a>
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    Made By Shivam Panchal
+  </div>
+</footer>
+
+
+<script src="index.js"></script>
+<script src="category.js"></script>
+
+
+</body>
+</html>
